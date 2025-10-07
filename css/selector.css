@@ -660,7 +660,8 @@ body {
 
     .control-panel {
         padding: 20px 15px;
-        position: relative;
+        position: relative !important;
+        top: auto !important;
     }
 
     .stats-row {
