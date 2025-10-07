@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XV Años de Jadelik - 16 de Noviembre 2025</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Mis XV Años</h1>
+            <h2 class="hero-name">Jadelik</h2>
+            <p class="hero-date">16 de Noviembre de 2025</p>
+            <a href="#invitation" class="btn-scroll">Ver Invitación</a>
+        </div>
+        <div class="hero-background" id="heroSlider"></div>
+    </section>
+
+    <!-- Invitation Section -->
+    <section id="invitation" class="invitation-section">
+        <div class="container">
+            <div class="invitation-card">
+                <div class="invitation-header">
+                    <div class="decorative-line"></div>
+                    <h2 class="section-title">Celebremos Juntos</h2>
+                    <div class="decorative-line"></div>
+                </div>
+                <div class="invitation-content">
+                    <p class="invitation-text">
+                        Con la bendición de Dios y el amor de mi familia,
+                        tengo el honor de invitarte a celebrar mis quince años.
+                    </p>
+                    <div class="quinceañera-name">
+                        <span class="name-highlight">Jadelik</span>
+                    </div>
+                    <p class="invitation-text special">
+                        Este momento tan especial no sería completo sin tu presencia.
+                        Acompáñame en este día que tanto he esperado.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Details Section -->
+    <section class="event-details">
+        <div class="container">
+            <div class="details-grid">
+                <div class="detail-card">
+                    <div class="detail-icon">📅</div>
+                    <h3>Fecha</h3>
+                    <p class="detail-main">Domingo</p>
+                    <p class="detail-sub">16 de Noviembre de 2025</p>
+                </div>
+                <div class="detail-card">
+                    <div class="detail-icon">⏰</div>
+                    <h3>Hora</h3>
+                    <p class="detail-main">Ceremonia Religiosa</p>
+                    <p class="detail-sub">Por confirmar</p>
+                </div>
+                <div class="detail-card">
+                    <div class="detail-icon">🎉</div>
+                    <h3>Recepción</h3>
+                    <p class="detail-main">Gran Fiesta</p>
+                    <p class="detail-sub">Por confirmar</p>
+                </div>
+                <div class="detail-card">
+                    <div class="detail-icon">📍</div>
+                    <h3>Lugar</h3>
+                    <p class="detail-main">Iglesia y Salón</p>
+                    <p class="detail-sub">Por confirmar</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section - Grid Style -->
+    <section class="gallery-section gallery-grid-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Momentos Especiales</h2>
+                <p class="section-subtitle">Una mirada a través de los años</p>
+            </div>
+            <div class="gallery-grid" id="galleryGrid"></div>
+        </div>
+    </section>
+
+    <!-- Gallery Section - Carousel -->
+    <section class="gallery-carousel-section">
+        <div class="container-fluid">
+            <div class="section-header">
+                <h2 class="section-title">Mis Recuerdos</h2>
+            </div>
+            <div class="carousel-container">
+                <button class="carousel-btn prev" id="carouselPrev">‹</button>
+                <div class="carousel-track" id="carouselTrack"></div>
+                <button class="carousel-btn next" id="carouselNext">›</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section - Masonry -->
+    <section class="gallery-masonry-section">
+        <div class="container-fluid">
+            <div class="section-header">
+                <h2 class="section-title">Galería de Fotos</h2>
+            </div>
+            <div class="masonry-grid" id="masonryGrid"></div>
+        </div>
+    </section>
+
+    <!-- Gallery Section - Fullscreen Slideshow -->
+    <section class="gallery-slideshow-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Presentación Especial</h2>
+            </div>
+            <div class="slideshow-container">
+                <div class="slideshow-wrapper" id="slideshowWrapper"></div>
+                <div class="slideshow-controls">
+                    <button class="slideshow-btn" id="slideshowPrev">◄ Anterior</button>
+                    <button class="slideshow-btn" id="slideshowPlay">▶ Reproducir</button>
+                    <button class="slideshow-btn" id="slideshowNext">Siguiente ►</button>
+                </div>
+                <div class="slideshow-counter" id="slideshowCounter"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section - Collage -->
+    <section class="gallery-collage-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Collage de Momentos</h2>
+            </div>
+            <div class="collage-container" id="collageContainer"></div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-card">
+                <h2 class="section-title">Confirma tu Asistencia</h2>
+                <p class="contact-text">
+                    Tu presencia es muy importante para mí.
+                    Por favor confirma tu asistencia.
+                </p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/5214775970172" class="contact-link" target="_blank">
+                                477 597 0172
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dress-code">
+                    <h3>Código de Vestimenta</h3>
+                    <p>Formal / Elegante</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">Con cariño, Jadelik</p>
+                <p class="footer-date">16 • Noviembre • 2025</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightboxImg">
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+        <a class="lightbox-prev">❮</a>
+        <a class="lightbox-next">❯</a>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

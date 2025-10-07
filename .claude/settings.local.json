@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir:*)",
+      "Bash(mv:*)",
+      "Bash(git init:*)",
+      "Bash(gh:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nInvitación XV Años de Jadelik - 16 de Noviembre 2025\n\n- Diseño responsive 100% adaptable a todos los dispositivos\n- 57 fotografías distribuidas en 5 tipos de galerías diferentes\n- Hero slider con animación de fondo\n- Lightbox para visualización de fotos en pantalla completa\n- Información del evento y contacto por WhatsApp\n- Optimización con lazy loading y animaciones suaves\n\n🎉 Generated with Claude Code https://claude.com/claude-code\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
