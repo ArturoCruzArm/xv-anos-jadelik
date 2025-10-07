@@ -313,17 +313,21 @@ section {
     cursor: pointer;
     aspect-ratio: 1 / 1;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, var(--accent-color), #f9f3ee);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .gallery-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     transition: var(--transition);
 }
 
 .gallery-item:hover img {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .gallery-item::after {
@@ -368,12 +372,16 @@ section {
     border-radius: 15px;
     overflow: hidden;
     box-shadow: var(--shadow);
+    background: linear-gradient(135deg, var(--accent-color), #f9f3ee);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .carousel-item img {
     width: 100%;
     height: 400px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .carousel-btn {
@@ -425,6 +433,8 @@ section {
     border-radius: 10px;
     overflow: hidden;
     transition: var(--transition);
+    background: linear-gradient(135deg, var(--accent-color), #f9f3ee);
+    padding: 10px;
 }
 
 .masonry-item:hover {
@@ -434,7 +444,9 @@ section {
 
 .masonry-item img {
     width: 100%;
+    height: auto;
     border-radius: 10px;
+    object-fit: contain;
 }
 
 /* ========================================
@@ -455,6 +467,7 @@ section {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: var(--shadow);
+    background: linear-gradient(135deg, var(--accent-color), #f9f3ee);
 }
 
 .slideshow-item {
@@ -465,6 +478,9 @@ section {
     height: 100%;
     opacity: 0;
     transition: opacity 1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .slideshow-item.active {
@@ -472,9 +488,9 @@ section {
 }
 
 .slideshow-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 .slideshow-controls {
@@ -531,6 +547,11 @@ section {
     cursor: pointer;
     transition: var(--transition);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, var(--accent-color), #f9f3ee);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
 }
 
 .collage-item:hover {
@@ -542,7 +563,7 @@ section {
 .collage-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 /* Collage layout patterns */
@@ -708,8 +729,10 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 90%;
-    max-height: 85%;
+    max-width: 95%;
+    max-height: 90%;
+    width: auto;
+    height: auto;
     object-fit: contain;
     animation: zoomIn 0.3s;
 }
