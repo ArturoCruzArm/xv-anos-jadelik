@@ -626,9 +626,51 @@ body {
 /* ========================================
    RESPONSIVE
    ======================================== */
-@media screen and (max-width: 768px) {
+
+/* Tablets y móviles grandes (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .container {
+        padding: 0 15px;
+    }
+
     .stats-row {
-        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 12px;
+    }
+
+    .photos-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 15px;
+    }
+}
+
+/* Tablets y móviles (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 30px 15px;
+    }
+
+    .main-title {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1.8rem;
+    }
+
+    .control-panel {
+        padding: 20px 15px;
+        position: relative;
+    }
+
+    .stats-row {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        margin-bottom: 20px;
+    }
+
+    .stat-card {
+        padding: 12px;
         gap: 10px;
     }
 
@@ -636,36 +678,336 @@ body {
         font-size: 2rem;
     }
 
+    .stat-info h3 {
+        font-size: 0.85rem;
+    }
+
     .stat-count {
         font-size: 1.5rem;
     }
 
-    .photos-grid {
-        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-        gap: 15px;
-    }
-
-    .modal-body {
-        grid-template-columns: 1fr;
-        padding: 20px;
-    }
-
     .action-buttons {
         flex-direction: column;
+        gap: 8px;
     }
 
     .btn {
         width: 100%;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .stats-row {
-        grid-template-columns: 1fr 1fr;
+        padding: 14px 20px;
+        font-size: 0.95rem;
     }
 
     .photos-grid {
-        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+        gap: 12px;
+    }
+
+    .photo-number {
+        font-size: 0.8rem;
+        padding: 4px 10px;
+    }
+
+    .badge {
+        font-size: 0.7rem;
+        padding: 3px 8px;
+    }
+
+    /* Modal responsive */
+    .modal-content {
+        width: 98%;
+        max-height: 95vh;
+        border-radius: 15px;
+    }
+
+    .modal-body {
+        grid-template-columns: 1fr;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .modal-close {
+        top: 10px;
+        right: 10px;
+        font-size: 30px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .modal-options h3 {
+        font-size: 1.5rem;
+    }
+
+    .modal-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+
+    .option-buttons {
+        gap: 12px;
+        margin-bottom: 20px;
+    }
+
+    .option-btn {
+        padding: 14px 16px;
+    }
+
+    .option-icon {
+        font-size: 1.8rem;
+    }
+
+    .option-text {
+        font-size: 0.95rem;
+    }
+
+    .modal-actions {
+        flex-direction: column;
         gap: 10px;
+    }
+
+    .btn-save,
+    .btn-cancel {
+        width: 100%;
+        padding: 14px;
+    }
+
+    .toast {
+        bottom: 20px;
+        right: 20px;
+        left: 20px;
+        text-align: center;
+    }
+}
+
+/* Móviles pequeños (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .header {
+        padding: 25px 10px;
+    }
+
+    .main-title {
+        font-size: 1.8rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .instructions {
+        font-size: 0.85rem;
+    }
+
+    .control-panel {
+        padding: 15px 10px;
+    }
+
+    .stats-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .stat-card {
+        padding: 10px 8px;
+        gap: 8px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .stat-icon {
+        font-size: 1.8rem;
+    }
+
+    .stat-info h3 {
+        font-size: 0.75rem;
+    }
+
+    .stat-count {
+        font-size: 1.3rem;
+    }
+
+    .action-buttons {
+        gap: 6px;
+    }
+
+    .btn {
+        padding: 12px 16px;
+        font-size: 0.9rem;
+    }
+
+    .gallery-section {
+        padding: 20px 10px;
+    }
+
+    .photos-grid {
+        grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+        gap: 8px;
+    }
+
+    .photo-number {
+        font-size: 0.75rem;
+        padding: 3px 8px;
+        top: 5px;
+        left: 5px;
+    }
+
+    .photo-badges {
+        padding: 5px;
+        gap: 3px;
+    }
+
+    .badge {
+        font-size: 0.65rem;
+        padding: 2px 6px;
+    }
+
+    /* Modal para móviles pequeños */
+    .modal-content {
+        width: 100%;
+        max-height: 100vh;
+        border-radius: 0;
+    }
+
+    .modal-body {
+        padding: 12px;
+        gap: 15px;
+    }
+
+    .modal-image-container img {
+        border-radius: 8px;
+    }
+
+    .modal-photo-number {
+        font-size: 0.95rem;
+        padding: 6px 12px;
+        top: 10px;
+        left: 10px;
+    }
+
+    .modal-options h3 {
+        font-size: 1.3rem;
+        margin-bottom: 8px;
+    }
+
+    .modal-subtitle {
+        font-size: 0.85rem;
+        margin-bottom: 15px;
+    }
+
+    .option-buttons {
+        gap: 10px;
+    }
+
+    .option-btn {
+        padding: 12px 14px;
+        gap: 12px;
+    }
+
+    .option-icon {
+        font-size: 1.5rem;
+    }
+
+    .option-text {
+        font-size: 0.9rem;
+    }
+
+    .option-check {
+        width: 25px;
+        height: 25px;
+        font-size: 1.2rem;
+    }
+
+    .btn-save,
+    .btn-cancel {
+        padding: 12px;
+        font-size: 1rem;
+    }
+
+    .toast {
+        bottom: 15px;
+        right: 15px;
+        left: 15px;
+        padding: 14px 18px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Móviles muy pequeños (max-width: 360px) */
+@media screen and (max-width: 360px) {
+    .main-title {
+        font-size: 1.5rem;
+    }
+
+    .subtitle {
+        font-size: 1.3rem;
+    }
+
+    .stats-row {
+        grid-template-columns: 1fr 1fr;
+        gap: 6px;
+    }
+
+    .stat-card {
+        padding: 8px 6px;
+    }
+
+    .stat-icon {
+        font-size: 1.5rem;
+    }
+
+    .stat-info h3 {
+        font-size: 0.7rem;
+    }
+
+    .stat-count {
+        font-size: 1.1rem;
+    }
+
+    .photos-grid {
+        grid-template-columns: repeat(auto-fill, minmax(95px, 1fr));
+        gap: 6px;
+    }
+
+    .btn {
+        padding: 10px 14px;
+        font-size: 0.85rem;
+    }
+}
+
+/* Landscape mobile */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    .modal-content {
+        max-height: 98vh;
+        overflow-y: auto;
+    }
+
+    .modal-body {
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    .modal-image-container img {
+        max-height: 300px;
+        object-fit: contain;
+    }
+}
+
+/* Print styles */
+@media print {
+    .control-panel,
+    .modal,
+    .toast {
+        display: none !important;
+    }
+
+    .photos-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Reduce motion preference */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
     }
 }
