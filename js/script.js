@@ -1,34 +1,61 @@
 // ========================================
-// PHOTOS ARRAY - Fotos seleccionadas para impresión
+// PHOTOS ARRAY - Se cargarán desde el JSON
 // ========================================
-const photos = [
-    'images/foto7_0001.jpg', 'images/foto7_0002.jpg', 'images/foto7_0003.jpg',
-    'images/foto7_0004.jpg', 'images/foto7_0005.jpg', 'images/foto7_0006.jpg',
-    'images/foto7_0007.jpg', 'images/foto7_0008.jpg', 'images/foto7_0009.jpg',
-    'images/foto7_0011.jpg', 'images/foto7_0012.jpg', 'images/foto7_0013.jpg',
-    'images/foto7_0014.jpg', 'images/foto7_0015.jpg', 'images/foto7_0016.jpg',
-    'images/foto7_0017.jpg', 'images/foto7_0018.jpg', 'images/foto7_0019.jpg',
-    'images/foto7_0020.jpg', 'images/foto7_0021.jpg', 'images/foto7_0023.jpg',
-    'images/foto7_0024.jpg', 'images/foto7_0025.jpg', 'images/foto7_0026.jpg',
-    'images/foto7_0027.jpg', 'images/foto7_0028.jpg', 'images/foto7_0029.jpg',
-    'images/foto7_0030.jpg', 'images/foto7_0031.jpg', 'images/foto7_0032.jpg',
-    'images/foto7_0034.jpg', 'images/foto7_0035.jpg', 'images/foto7_0036.jpg',
-    'images/foto7_0037.jpg', 'images/foto7_0038.jpg', 'images/foto7_0039.jpg',
-    'images/foto7_0040.jpg', 'images/foto7_0041.jpg', 'images/foto7_0042.jpg',
-    'images/foto7_0043.jpg', 'images/foto7_0044.jpg', 'images/foto7_0045.jpg',
-    'images/foto7_0046.jpg', 'images/foto7_0047.jpg', 'images/foto7_0048.jpg',
-    'images/foto7_0050.jpg', 'images/foto7_0051.jpg', 'images/foto7_0053.jpg',
-    'images/foto7_0055.jpg', 'images/foto7_0056.jpg'
-];
+let photos = [];
+let invitationPhotos = [];
 
-// Fotos seleccionadas para la invitación (hero slider)
-const invitationPhotos = [
-    'images/foto7_0003.jpg',
-    'images/foto7_0012.jpg',
-    'images/foto7_0014.jpg',
-    'images/foto7_0038.jpg',
-    'images/foto7_0046.jpg'
-];
+// Cargar fotos desde el archivo JSON
+async function loadPhotosFromJSON() {
+    try {
+        const response = await fetch('seleccion-fotos-jadelik-2025-10-08.json');
+        const data = await response.json();
+
+        // Filtrar fotos para impresión
+        photos = data.selecciones
+            .filter(foto => foto.impresion === true)
+            .map(foto => foto.archivo);
+
+        // Filtrar fotos para invitación
+        invitationPhotos = data.selecciones
+            .filter(foto => foto.invitacion === true)
+            .map(foto => foto.archivo);
+
+        console.log(`Fotos cargadas desde JSON: ${photos.length} para impresión, ${invitationPhotos.length} para invitación`);
+
+        // Inicializar las galerías después de cargar las fotos
+        initAllGalleries();
+    } catch (error) {
+        console.error('Error al cargar el JSON:', error);
+        // Fallback a fotos por defecto si hay error
+        photos = [
+            'images/foto7_0001.jpg', 'images/foto7_0002.jpg', 'images/foto7_0003.jpg',
+            'images/foto7_0004.jpg', 'images/foto7_0005.jpg', 'images/foto7_0006.jpg',
+            'images/foto7_0007.jpg', 'images/foto7_0008.jpg', 'images/foto7_0009.jpg',
+            'images/foto7_0011.jpg', 'images/foto7_0012.jpg', 'images/foto7_0013.jpg',
+            'images/foto7_0014.jpg', 'images/foto7_0015.jpg', 'images/foto7_0016.jpg',
+            'images/foto7_0017.jpg', 'images/foto7_0018.jpg', 'images/foto7_0019.jpg',
+            'images/foto7_0020.jpg', 'images/foto7_0021.jpg', 'images/foto7_0023.jpg',
+            'images/foto7_0024.jpg', 'images/foto7_0025.jpg', 'images/foto7_0026.jpg',
+            'images/foto7_0027.jpg', 'images/foto7_0028.jpg', 'images/foto7_0029.jpg',
+            'images/foto7_0030.jpg', 'images/foto7_0031.jpg', 'images/foto7_0032.jpg',
+            'images/foto7_0034.jpg', 'images/foto7_0035.jpg', 'images/foto7_0036.jpg',
+            'images/foto7_0037.jpg', 'images/foto7_0038.jpg', 'images/foto7_0039.jpg',
+            'images/foto7_0040.jpg', 'images/foto7_0041.jpg', 'images/foto7_0042.jpg',
+            'images/foto7_0043.jpg', 'images/foto7_0044.jpg', 'images/foto7_0045.jpg',
+            'images/foto7_0046.jpg', 'images/foto7_0047.jpg', 'images/foto7_0048.jpg',
+            'images/foto7_0050.jpg', 'images/foto7_0051.jpg', 'images/foto7_0053.jpg',
+            'images/foto7_0055.jpg', 'images/foto7_0056.jpg'
+        ];
+        invitationPhotos = [
+            'images/foto7_0003.jpg',
+            'images/foto7_0012.jpg',
+            'images/foto7_0014.jpg',
+            'images/foto7_0038.jpg',
+            'images/foto7_0046.jpg'
+        ];
+        initAllGalleries();
+    }
+}
 
 // ========================================
 // HERO SLIDER
@@ -319,9 +346,9 @@ function adjustCarousel() {
 window.addEventListener('resize', adjustCarousel);
 
 // ========================================
-// INITIALIZE ALL
+// INITIALIZE ALL GALLERIES
 // ========================================
-document.addEventListener('DOMContentLoaded', () => {
+function initAllGalleries() {
     initHeroSlider();
     initGalleryGrid();
     initCarousel();
@@ -332,7 +359,15 @@ document.addEventListener('DOMContentLoaded', () => {
     adjustCarousel();
 
     console.log('Invitación de XV Años de Jadelik cargada correctamente');
-    console.log(`Total de fotos: ${photos.length}`);
+    console.log(`Total de fotos: ${photos.length} para impresión, ${invitationPhotos.length} para invitación`);
+}
+
+// ========================================
+// INITIALIZE ALL
+// ========================================
+document.addEventListener('DOMContentLoaded', () => {
+    // Cargar fotos desde JSON y luego inicializar galerías
+    loadPhotosFromJSON();
 });
 
 // ========================================
