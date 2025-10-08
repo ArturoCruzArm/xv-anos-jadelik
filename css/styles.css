@@ -2,14 +2,17 @@
    VARIABLES Y RESET
    ======================================== */
 :root {
-    --primary-color: #d4a373;
-    --secondary-color: #8b6f47;
-    --accent-color: #f4e4d7;
+    /* Colores Blush y Dorado */
+    --primary-color: #d4af37;        /* Dorado */
+    --secondary-color: #b8860b;      /* Dorado oscuro */
+    --accent-color: #f5d7d7;         /* Blush suave */
+    --blush-color: #e8b4b8;          /* Blush */
+    --gold-color: #d4af37;           /* Dorado */
     --text-dark: #2c2c2c;
     --text-light: #fff;
     --overlay-dark: rgba(0, 0, 0, 0.5);
-    --overlay-light: rgba(244, 228, 215, 0.95);
-    --shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    --overlay-light: rgba(232, 180, 184, 0.95);  /* Overlay blush */
+    --shadow: 0 10px 30px rgba(212, 175, 55, 0.3);  /* Sombra dorada */
     --transition: all 0.3s ease;
 }
 
@@ -139,8 +142,8 @@ img {
 .btn-scroll {
     display: inline-block;
     padding: 15px 40px;
-    background-color: var(--text-light);
-    color: var(--secondary-color);
+    background: linear-gradient(135deg, var(--gold-color), var(--secondary-color));
+    color: var(--text-light);
     text-decoration: none;
     border-radius: 50px;
     font-weight: 600;
@@ -151,8 +154,8 @@ img {
 
 .btn-scroll:hover {
     transform: translateY(-3px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-    background-color: var(--accent-color);
+    box-shadow: 0 15px 40px rgba(212, 175, 55, 0.5);
+    background: linear-gradient(135deg, var(--secondary-color), var(--gold-color));
 }
 
 /* ========================================

@@ -10,17 +10,16 @@ async function loadPhotosFromJSON() {
         const response = await fetch('seleccion-fotos-jadelik-2025-10-08.json');
         const data = await response.json();
 
-        // Filtrar fotos para impresión
-        photos = data.selecciones
-            .filter(foto => foto.impresion === true)
-            .map(foto => foto.archivo);
-
-        // Filtrar fotos para invitación
-        invitationPhotos = data.selecciones
+        // Filtrar solo fotos para invitación
+        const fotosInvitacion = data.selecciones
             .filter(foto => foto.invitacion === true)
             .map(foto => foto.archivo);
 
-        console.log(`Fotos cargadas desde JSON: ${photos.length} para impresión, ${invitationPhotos.length} para invitación`);
+        // Usar las fotos de invitación para todo
+        photos = fotosInvitacion;
+        invitationPhotos = fotosInvitacion;
+
+        console.log(`Fotos cargadas desde JSON: ${photos.length} fotos con invitacion: true`);
 
         // Inicializar las galerías después de cargar las fotos
         initAllGalleries();
@@ -358,8 +357,8 @@ function initAllGalleries() {
     initScrollAnimations();
     adjustCarousel();
 
-    console.log('Invitación de XV Años de Jadelik cargada correctamente');
-    console.log(`Total de fotos: ${photos.length} para impresión, ${invitationPhotos.length} para invitación`);
+    console.log('Invitación de XV Años de Jade cargada correctamente');
+    console.log(`Total de fotos: ${photos.length} fotos seleccionadas`);
 }
 
 // ========================================
