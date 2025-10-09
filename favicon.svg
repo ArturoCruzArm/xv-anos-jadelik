@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D4AF37;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="blushGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FFF0F0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFB6C1;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="48" fill="url(#blushGradient)" stroke="url(#goldGradient)" stroke-width="3"/>
+
+  <!-- Crown -->
+  <path d="M 30 35 L 35 25 L 40 35 L 50 20 L 60 35 L 65 25 L 70 35 L 70 42 L 30 42 Z"
+        fill="url(#goldGradient)" stroke="#B8860B" stroke-width="1"/>
+
+  <!-- Decorative circles on crown -->
+  <circle cx="35" cy="25" r="2.5" fill="#FFD700"/>
+  <circle cx="50" cy="20" r="3" fill="#FFD700"/>
+  <circle cx="65" cy="25" r="2.5" fill="#FFD700"/>
+
+  <!-- XV text -->
+  <text x="50" y="68" font-family="serif" font-size="32" font-weight="bold"
+        text-anchor="middle" fill="url(#goldGradient)" stroke="#B8860B" stroke-width="0.5">XV</text>
+
+  <!-- Decorative flourishes -->
+  <path d="M 25 75 Q 30 80 35 75" fill="none" stroke="url(#goldGradient)" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M 75 75 Q 70 80 65 75" fill="none" stroke="url(#goldGradient)" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- Small stars -->
+  <path d="M 20 45 L 21 47 L 23 47 L 21.5 48.5 L 22 50.5 L 20 49 L 18 50.5 L 18.5 48.5 L 17 47 L 19 47 Z"
+        fill="#FFD700" opacity="0.8"/>
+  <path d="M 80 45 L 81 47 L 83 47 L 81.5 48.5 L 82 50.5 L 80 49 L 78 50.5 L 78.5 48.5 L 77 47 L 79 47 Z"
+        fill="#FFD700" opacity="0.8"/>
+</svg>
