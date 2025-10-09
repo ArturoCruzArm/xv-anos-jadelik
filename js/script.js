@@ -1,4 +1,22 @@
 // ========================================
+// BACKGROUND MUSIC
+// ========================================
+const backgroundMusic = document.getElementById('backgroundMusic');
+
+// Función para iniciar la música
+function playBackgroundMusic() {
+    if (backgroundMusic) {
+        backgroundMusic.play().catch(error => {
+            console.log('Autoplay bloqueado. La música se reproducirá al interactuar con la página.');
+            // Intentar reproducir al primer clic/toque en la página
+            document.body.addEventListener('click', () => {
+                backgroundMusic.play().catch(e => console.log('No se pudo reproducir la música:', e));
+            }, { once: true });
+        });
+    }
+}
+
+// ========================================
 // PHOTOS ARRAY - Se cargarán desde el JSON
 // ========================================
 let photos = [];
@@ -365,6 +383,9 @@ function initAllGalleries() {
 // INITIALIZE ALL
 // ========================================
 document.addEventListener('DOMContentLoaded', () => {
+    // Iniciar música de fondo
+    playBackgroundMusic();
+
     // Cargar fotos desde JSON y luego inicializar galerías
     loadPhotosFromJSON();
 });
