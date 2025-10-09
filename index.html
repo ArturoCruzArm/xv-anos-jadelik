@@ -7,8 +7,9 @@
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon.svg">
-    <link rel="apple-touch-icon" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.svg">
+    <link rel="shortcut icon" href="favicon.svg">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.svg">
 
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
@@ -115,9 +116,9 @@
                 <h2 class="section-title">Mis Recuerdos</h2>
             </div>
             <div class="carousel-container">
-                <button class="carousel-btn prev" id="carouselPrev">‹</button>
+                <button type="button" class="carousel-btn prev" id="carouselPrev" aria-label="Anterior">‹</button>
                 <div class="carousel-track" id="carouselTrack"></div>
-                <button class="carousel-btn next" id="carouselNext">›</button>
+                <button type="button" class="carousel-btn next" id="carouselNext" aria-label="Siguiente">›</button>
             </div>
         </div>
     </section>
@@ -141,9 +142,9 @@
             <div class="slideshow-container">
                 <div class="slideshow-wrapper" id="slideshowWrapper"></div>
                 <div class="slideshow-controls">
-                    <button class="slideshow-btn" id="slideshowPrev">◄ Anterior</button>
-                    <button class="slideshow-btn" id="slideshowPlay">▶ Reproducir</button>
-                    <button class="slideshow-btn" id="slideshowNext">Siguiente ►</button>
+                    <button type="button" class="slideshow-btn" id="slideshowPrev">◄ Anterior</button>
+                    <button type="button" class="slideshow-btn" id="slideshowPlay">▶ Reproducir</button>
+                    <button type="button" class="slideshow-btn" id="slideshowNext">Siguiente ►</button>
                 </div>
                 <div class="slideshow-counter" id="slideshowCounter"></div>
             </div>
@@ -202,7 +203,7 @@
     <!-- Lightbox Modal -->
     <div id="lightbox" class="lightbox">
         <span class="lightbox-close">&times;</span>
-        <img class="lightbox-content" id="lightboxImg">
+        <img class="lightbox-content" id="lightboxImg" alt="Imagen ampliada">
         <div class="lightbox-caption" id="lightboxCaption"></div>
         <a class="lightbox-prev">❮</a>
         <a class="lightbox-next">❯</a>
