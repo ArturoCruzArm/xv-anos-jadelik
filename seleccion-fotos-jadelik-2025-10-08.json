@@ -11,7 +11,7 @@
   "selecciones": [
     {
       "numero_foto": 1,
-      "archivo": "images/foto7_0001.jpg",
+      "archivo": "images/foto7_0001.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -19,7 +19,7 @@
     },
     {
       "numero_foto": 2,
-      "archivo": "images/foto7_0002.jpg",
+      "archivo": "images/foto7_0002.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -27,7 +27,7 @@
     },
     {
       "numero_foto": 3,
-      "archivo": "images/foto7_0003.jpg",
+      "archivo": "images/foto7_0003.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": true,
@@ -35,7 +35,7 @@
     },
     {
       "numero_foto": 4,
-      "archivo": "images/foto7_0004.jpg",
+      "archivo": "images/foto7_0004.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -43,7 +43,7 @@
     },
     {
       "numero_foto": 5,
-      "archivo": "images/foto7_0005.jpg",
+      "archivo": "images/foto7_0005.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -51,7 +51,7 @@
     },
     {
       "numero_foto": 6,
-      "archivo": "images/foto7_0006.jpg",
+      "archivo": "images/foto7_0006.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -59,7 +59,7 @@
     },
     {
       "numero_foto": 7,
-      "archivo": "images/foto7_0007.jpg",
+      "archivo": "images/foto7_0007.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -67,7 +67,7 @@
     },
     {
       "numero_foto": 8,
-      "archivo": "images/foto7_0008.jpg",
+      "archivo": "images/foto7_0008.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -75,7 +75,7 @@
     },
     {
       "numero_foto": 9,
-      "archivo": "images/foto7_0009.jpg",
+      "archivo": "images/foto7_0009.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -83,7 +83,7 @@
     },
     {
       "numero_foto": 10,
-      "archivo": "images/foto7_0010.jpg",
+      "archivo": "images/foto7_0010.webp",
       "ampliacion": false,
       "impresion": false,
       "invitacion": false,
@@ -91,7 +91,7 @@
     },
     {
       "numero_foto": 11,
-      "archivo": "images/foto7_0011.jpg",
+      "archivo": "images/foto7_0011.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -99,7 +99,7 @@
     },
     {
       "numero_foto": 12,
-      "archivo": "images/foto7_0012.jpg",
+      "archivo": "images/foto7_0012.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": true,
@@ -107,7 +107,7 @@
     },
     {
       "numero_foto": 13,
-      "archivo": "images/foto7_0013.jpg",
+      "archivo": "images/foto7_0013.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -115,7 +115,7 @@
     },
     {
       "numero_foto": 14,
-      "archivo": "images/foto7_0014.jpg",
+      "archivo": "images/foto7_0014.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": true,
@@ -123,7 +123,7 @@
     },
     {
       "numero_foto": 15,
-      "archivo": "images/foto7_0015.jpg",
+      "archivo": "images/foto7_0015.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -131,7 +131,7 @@
     },
     {
       "numero_foto": 16,
-      "archivo": "images/foto7_0016.jpg",
+      "archivo": "images/foto7_0016.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -139,7 +139,7 @@
     },
     {
       "numero_foto": 17,
-      "archivo": "images/foto7_0017.jpg",
+      "archivo": "images/foto7_0017.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -147,7 +147,7 @@
     },
     {
       "numero_foto": 18,
-      "archivo": "images/foto7_0018.jpg",
+      "archivo": "images/foto7_0018.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -155,7 +155,7 @@
     },
     {
       "numero_foto": 19,
-      "archivo": "images/foto7_0019.jpg",
+      "archivo": "images/foto7_0019.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -163,7 +163,7 @@
     },
     {
       "numero_foto": 20,
-      "archivo": "images/foto7_0020.jpg",
+      "archivo": "images/foto7_0020.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -171,7 +171,7 @@
     },
     {
       "numero_foto": 21,
-      "archivo": "images/foto7_0021.jpg",
+      "archivo": "images/foto7_0021.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -179,7 +179,7 @@
     },
     {
       "numero_foto": 22,
-      "archivo": "images/foto7_0022.jpg",
+      "archivo": "images/foto7_0022.webp",
       "ampliacion": false,
       "impresion": false,
       "invitacion": false,
@@ -187,7 +187,7 @@
     },
     {
       "numero_foto": 23,
-      "archivo": "images/foto7_0023.jpg",
+      "archivo": "images/foto7_0023.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -195,7 +195,7 @@
     },
     {
       "numero_foto": 24,
-      "archivo": "images/foto7_0024.jpg",
+      "archivo": "images/foto7_0024.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -203,7 +203,7 @@
     },
     {
       "numero_foto": 25,
-      "archivo": "images/foto7_0025.jpg",
+      "archivo": "images/foto7_0025.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -211,7 +211,7 @@
     },
     {
       "numero_foto": 26,
-      "archivo": "images/foto7_0026.jpg",
+      "archivo": "images/foto7_0026.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -219,7 +219,7 @@
     },
     {
       "numero_foto": 27,
-      "archivo": "images/foto7_0027.jpg",
+      "archivo": "images/foto7_0027.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -227,7 +227,7 @@
     },
     {
       "numero_foto": 28,
-      "archivo": "images/foto7_0028.jpg",
+      "archivo": "images/foto7_0028.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -235,7 +235,7 @@
     },
     {
       "numero_foto": 29,
-      "archivo": "images/foto7_0029.jpg",
+      "archivo": "images/foto7_0029.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -243,7 +243,7 @@
     },
     {
       "numero_foto": 30,
-      "archivo": "images/foto7_0030.jpg",
+      "archivo": "images/foto7_0030.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -251,7 +251,7 @@
     },
     {
       "numero_foto": 31,
-      "archivo": "images/foto7_0031.jpg",
+      "archivo": "images/foto7_0031.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -259,7 +259,7 @@
     },
     {
       "numero_foto": 32,
-      "archivo": "images/foto7_0032.jpg",
+      "archivo": "images/foto7_0032.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -267,7 +267,7 @@
     },
     {
       "numero_foto": 33,
-      "archivo": "images/foto7_0033.jpg",
+      "archivo": "images/foto7_0033.webp",
       "ampliacion": false,
       "impresion": false,
       "invitacion": false,
@@ -275,7 +275,7 @@
     },
     {
       "numero_foto": 34,
-      "archivo": "images/foto7_0034.jpg",
+      "archivo": "images/foto7_0034.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -283,7 +283,7 @@
     },
     {
       "numero_foto": 35,
-      "archivo": "images/foto7_0035.jpg",
+      "archivo": "images/foto7_0035.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -291,7 +291,7 @@
     },
     {
       "numero_foto": 36,
-      "archivo": "images/foto7_0036.jpg",
+      "archivo": "images/foto7_0036.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -299,7 +299,7 @@
     },
     {
       "numero_foto": 37,
-      "archivo": "images/foto7_0037.jpg",
+      "archivo": "images/foto7_0037.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -307,7 +307,7 @@
     },
     {
       "numero_foto": 38,
-      "archivo": "images/foto7_0038.jpg",
+      "archivo": "images/foto7_0038.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": true,
@@ -315,7 +315,7 @@
     },
     {
       "numero_foto": 39,
-      "archivo": "images/foto7_0039.jpg",
+      "archivo": "images/foto7_0039.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -323,7 +323,7 @@
     },
     {
       "numero_foto": 40,
-      "archivo": "images/foto7_0040.jpg",
+      "archivo": "images/foto7_0040.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -331,7 +331,7 @@
     },
     {
       "numero_foto": 41,
-      "archivo": "images/foto7_0041.jpg",
+      "archivo": "images/foto7_0041.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -339,7 +339,7 @@
     },
     {
       "numero_foto": 42,
-      "archivo": "images/foto7_0042.jpg",
+      "archivo": "images/foto7_0042.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -347,7 +347,7 @@
     },
     {
       "numero_foto": 43,
-      "archivo": "images/foto7_0043.jpg",
+      "archivo": "images/foto7_0043.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -355,7 +355,7 @@
     },
     {
       "numero_foto": 44,
-      "archivo": "images/foto7_0044.jpg",
+      "archivo": "images/foto7_0044.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -363,7 +363,7 @@
     },
     {
       "numero_foto": 45,
-      "archivo": "images/foto7_0045.jpg",
+      "archivo": "images/foto7_0045.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -371,7 +371,7 @@
     },
     {
       "numero_foto": 46,
-      "archivo": "images/foto7_0046.jpg",
+      "archivo": "images/foto7_0046.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": true,
@@ -379,7 +379,7 @@
     },
     {
       "numero_foto": 47,
-      "archivo": "images/foto7_0047.jpg",
+      "archivo": "images/foto7_0047.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -387,7 +387,7 @@
     },
     {
       "numero_foto": 48,
-      "archivo": "images/foto7_0048.jpg",
+      "archivo": "images/foto7_0048.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -395,7 +395,7 @@
     },
     {
       "numero_foto": 49,
-      "archivo": "images/foto7_0049.jpg",
+      "archivo": "images/foto7_0049.webp",
       "ampliacion": false,
       "impresion": false,
       "invitacion": false,
@@ -403,7 +403,7 @@
     },
     {
       "numero_foto": 50,
-      "archivo": "images/foto7_0050.jpg",
+      "archivo": "images/foto7_0050.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -411,7 +411,7 @@
     },
     {
       "numero_foto": 51,
-      "archivo": "images/foto7_0051.jpg",
+      "archivo": "images/foto7_0051.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -419,7 +419,7 @@
     },
     {
       "numero_foto": 52,
-      "archivo": "images/foto7_0052.jpg",
+      "archivo": "images/foto7_0052.webp",
       "ampliacion": false,
       "impresion": false,
       "invitacion": false,
@@ -427,7 +427,7 @@
     },
     {
       "numero_foto": 53,
-      "archivo": "images/foto7_0053.jpg",
+      "archivo": "images/foto7_0053.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -435,7 +435,7 @@
     },
     {
       "numero_foto": 54,
-      "archivo": "images/foto7_0054.jpg",
+      "archivo": "images/foto7_0054.webp",
       "ampliacion": false,
       "impresion": false,
       "invitacion": false,
@@ -443,7 +443,7 @@
     },
     {
       "numero_foto": 55,
-      "archivo": "images/foto7_0055.jpg",
+      "archivo": "images/foto7_0055.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -451,7 +451,7 @@
     },
     {
       "numero_foto": 56,
-      "archivo": "images/foto7_0056.jpg",
+      "archivo": "images/foto7_0056.webp",
       "ampliacion": false,
       "impresion": true,
       "invitacion": false,
@@ -459,7 +459,7 @@
     },
     {
       "numero_foto": 57,
-      "archivo": "images/foto7_0057.jpg",
+      "archivo": "images/foto7_0057.webp",
       "ampliacion": false,
       "impresion": false,
       "invitacion": false,
