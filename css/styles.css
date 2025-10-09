@@ -805,6 +805,55 @@ section {
 }
 
 /* ========================================
+   MUSIC CONTROL BUTTON
+   ======================================== */
+.music-toggle {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--gold-color), var(--secondary-color));
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.music-toggle:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 40px rgba(212, 175, 55, 0.5);
+}
+
+.music-toggle:active {
+    transform: scale(0.95);
+}
+
+.music-icon {
+    font-size: 1.8rem;
+    animation: pulse 2s infinite;
+}
+
+.music-toggle.paused .music-icon {
+    animation: none;
+    opacity: 0.6;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+/* ========================================
    RESPONSIVE DESIGN
    ======================================== */
 

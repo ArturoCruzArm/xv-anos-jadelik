@@ -16,10 +16,15 @@
 </head>
 <body>
     <!-- Audio Background -->
-    <audio id="backgroundMusic" autoplay loop>
+    <audio id="backgroundMusic" loop preload="auto">
         <source src="Jade.mp3" type="audio/mpeg">
         Tu navegador no soporta el elemento de audio.
     </audio>
+
+    <!-- Music Control Button -->
+    <button type="button" id="musicToggle" class="music-toggle" aria-label="Reproducir música">
+        <span class="music-icon">🎵</span>
+    </button>
 
     <!-- Hero Section -->
     <section class="hero">

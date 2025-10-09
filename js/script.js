@@ -2,18 +2,56 @@
 // BACKGROUND MUSIC
 // ========================================
 const backgroundMusic = document.getElementById('backgroundMusic');
+const musicToggle = document.getElementById('musicToggle');
+let musicPlaying = false;
 
 // Función para iniciar la música
 function playBackgroundMusic() {
     if (backgroundMusic) {
-        backgroundMusic.play().catch(error => {
-            console.log('Autoplay bloqueado. La música se reproducirá al interactuar con la página.');
-            // Intentar reproducir al primer clic/toque en la página
-            document.body.addEventListener('click', () => {
-                backgroundMusic.play().catch(e => console.log('No se pudo reproducir la música:', e));
-            }, { once: true });
-        });
+        backgroundMusic.play()
+            .then(() => {
+                musicPlaying = true;
+                updateMusicButton();
+                console.log('Música reproduciendo');
+            })
+            .catch(error => {
+                console.log('Autoplay bloqueado. Haz clic en el botón de música para reproducir.');
+                musicPlaying = false;
+                updateMusicButton();
+            });
     }
+}
+
+// Actualizar apariencia del botón
+function updateMusicButton() {
+    if (!musicToggle) return;
+
+    if (musicPlaying) {
+        musicToggle.classList.remove('paused');
+        musicToggle.setAttribute('aria-label', 'Pausar música');
+    } else {
+        musicToggle.classList.add('paused');
+        musicToggle.setAttribute('aria-label', 'Reproducir música');
+    }
+}
+
+// Toggle música con el botón
+if (musicToggle) {
+    musicToggle.addEventListener('click', () => {
+        if (!backgroundMusic) return;
+
+        if (musicPlaying) {
+            backgroundMusic.pause();
+            musicPlaying = false;
+        } else {
+            backgroundMusic.play()
+                .then(() => {
+                    musicPlaying = true;
+                })
+                .catch(e => console.log('Error al reproducir:', e));
+        }
+        updateMusicButton();
+    });
 }
 
 // ========================================
