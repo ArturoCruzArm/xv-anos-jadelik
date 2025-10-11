@@ -147,8 +147,10 @@ function initGalleryGrid() {
 }
 
 // ========================================
-// CAROUSEL
+// CAROUSEL - DESHABILITADO
 // ========================================
+// La sección del carousel "Mis Recuerdos" fue eliminada del HTML
+/*
 let carouselPosition = 0;
 const carouselTrack = document.getElementById('carouselTrack');
 const carouselPrev = document.getElementById('carouselPrev');
@@ -176,6 +178,7 @@ function moveCarousel(direction) {
 
     carouselTrack.style.transform = `translateX(${carouselPosition}px)`;
 }
+*/
 
 // ========================================
 // MASONRY GALLERY
@@ -378,8 +381,10 @@ if ('loading' in HTMLImageElement.prototype) {
 }
 
 // ========================================
-// RESPONSIVE CAROUSEL ADJUSTMENT
+// RESPONSIVE CAROUSEL ADJUSTMENT - DESHABILITADO
 // ========================================
+// La sección del carousel "Mis Recuerdos" fue eliminada del HTML
+/*
 function adjustCarousel() {
     const width = window.innerWidth;
     const items = carouselTrack.querySelectorAll('.carousel-item');
@@ -399,6 +404,7 @@ function adjustCarousel() {
 }
 
 window.addEventListener('resize', adjustCarousel);
+*/
 
 // ========================================
 // INITIALIZE ALL GALLERIES
@@ -406,12 +412,12 @@ window.addEventListener('resize', adjustCarousel);
 function initAllGalleries() {
     initHeroSlider();
     initGalleryGrid();
-    initCarousel();
+    // initCarousel(); // Deshabilitado - sección eliminada
     initMasonryGallery();
     initSlideshow();
     initCollage();
     initScrollAnimations();
-    adjustCarousel();
+    // adjustCarousel(); // Deshabilitado - sección eliminada
 
     console.log('Invitación de XV Años de Jade cargada correctamente');
     console.log(`Total de fotos: ${photos.length} fotos seleccionadas`);
