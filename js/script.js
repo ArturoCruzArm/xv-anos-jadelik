@@ -4,18 +4,20 @@
 const backgroundMusic = document.getElementById('backgroundMusic');
 const musicToggle = document.getElementById('musicToggle');
 let musicPlaying = false;
+let musicStarted = false;
 
 // Función para iniciar la música
 function playBackgroundMusic() {
-    if (backgroundMusic) {
+    if (backgroundMusic && !musicStarted) {
         backgroundMusic.play()
             .then(() => {
                 musicPlaying = true;
+                musicStarted = true;
                 updateMusicButton();
                 console.log('Música reproduciendo');
             })
             .catch(error => {
-                console.log('Autoplay bloqueado. Haz clic en el botón de música para reproducir.');
+                console.log('Esperando interacción del usuario para reproducir música');
                 musicPlaying = false;
                 updateMusicButton();
             });
@@ -35,18 +37,40 @@ function updateMusicButton() {
     }
 }
 
+// Iniciar música con el primer clic en la página
+document.addEventListener('click', function startMusicOnFirstClick() {
+    if (!musicStarted && backgroundMusic) {
+        backgroundMusic.play()
+            .then(() => {
+                musicPlaying = true;
+                musicStarted = true;
+                updateMusicButton();
+                console.log('Música iniciada con interacción del usuario');
+            })
+            .catch(e => console.log('Error al reproducir:', e));
+
+        // Remover el listener después del primer clic
+        document.removeEventListener('click', startMusicOnFirstClick);
+    }
+}, true);
+
 // Toggle música con el botón
 if (musicToggle) {
-    musicToggle.addEventListener('click', () => {
+    musicToggle.addEventListener('click', (e) => {
+        e.stopPropagation(); // Evitar que se propague al listener del documento
+
         if (!backgroundMusic) return;
 
         if (musicPlaying) {
             backgroundMusic.pause();
             musicPlaying = false;
+            console.log('Música pausada');
         } else {
             backgroundMusic.play()
                 .then(() => {
                     musicPlaying = true;
+                    musicStarted = true;
+                    console.log('Música reanudada');
                 })
                 .catch(e => console.log('Error al reproducir:', e));
         }
