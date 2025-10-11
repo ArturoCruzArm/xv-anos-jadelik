@@ -181,8 +181,10 @@ function moveCarousel(direction) {
 */
 
 // ========================================
-// MASONRY GALLERY
+// MASONRY GALLERY - DESHABILITADO
 // ========================================
+// La sección Masonry "Galería de Fotos" fue eliminada del HTML
+/*
 function initMasonryGallery() {
     const masonryGrid = document.getElementById('masonryGrid');
 
@@ -194,10 +196,13 @@ function initMasonryGallery() {
         masonryGrid.appendChild(item);
     });
 }
+*/
 
 // ========================================
-// SLIDESHOW
+// SLIDESHOW - DESHABILITADO
 // ========================================
+// La sección Slideshow "Presentación Especial" fue eliminada del HTML
+/*
 let slideshowIndex = 0;
 let slideshowInterval = null;
 const slideshowWrapper = document.getElementById('slideshowWrapper');
@@ -245,10 +250,13 @@ function toggleSlideshowPlay() {
 function updateSlideshowCounter() {
     slideshowCounter.textContent = `${slideshowIndex + 1} / ${photos.length}`;
 }
+*/
 
 // ========================================
-// COLLAGE
+// COLLAGE - DESHABILITADO
 // ========================================
+// La sección Collage "Collage de Momentos" fue eliminada del HTML
+/*
 function initCollage() {
     const collageContainer = document.getElementById('collageContainer');
 
@@ -260,6 +268,7 @@ function initCollage() {
         collageContainer.appendChild(item);
     });
 }
+*/
 
 // ========================================
 // LIGHTBOX
@@ -413,9 +422,9 @@ function initAllGalleries() {
     initHeroSlider();
     initGalleryGrid();
     // initCarousel(); // Deshabilitado - sección eliminada
-    initMasonryGallery();
-    initSlideshow();
-    initCollage();
+    // initMasonryGallery(); // Deshabilitado - sección eliminada
+    // initSlideshow(); // Deshabilitado - sección eliminada
+    // initCollage(); // Deshabilitado - sección eliminada
     initScrollAnimations();
     // adjustCarousel(); // Deshabilitado - sección eliminada
 
