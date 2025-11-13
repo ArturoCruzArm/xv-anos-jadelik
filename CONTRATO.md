@@ -36,9 +36,8 @@
 **Costo total:** $5,300 pesos
 
 ### Pagos:
-- **Anticipo:** $2,000 pesos
-- **Pago en sesión (Expiatorio):** $1,000 pesos *(5 de octubre de 2025)*
-- **Saldo pendiente:** $2,300 pesos
+- **Anticipo:** $2,000 pesos *(5 de octubre de 2025)*
+- **Saldo pendiente:** $3,300 pesos
 
 ---
 
@@ -57,7 +56,7 @@
 - **21/09/2025:** Primer contacto, acuerdo de sesión fotográfica
 - **24/09/2025:** Confirmación de sesión para el 5 de octubre a las 4:00 PM
 - **30/09/2025:** Cambio de ubicación de Guanajuato a León (Expiatorio y Forum Cultural)
-- **05/10/2025:** Sesión fotográfica realizada - Pago de $2,000 anticipo + $1,000 en sesión
+- **05/10/2025:** Sesión fotográfica realizada - Pago de $2,000 anticipo
 - **07/10/2025:** Envío de selector de fotos y solicitud de información para invitación web
 - **11/10/2025:** Entrega de invitación web con ajustes (cambio de número telefónico)
 
