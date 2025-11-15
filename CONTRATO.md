@@ -37,7 +37,9 @@
 
 ### Pagos:
 - **Anticipo:** $2,000 pesos *(5 de octubre de 2025)*
-- **Saldo pendiente:** $3,300 pesos
+- **Saldo final:** $3,300 pesos *(14 de noviembre de 2025 - Transferencia - José Alejandro Elías)*
+
+**Estado: PAGADO COMPLETAMENTE ✓**
 
 ---
 
@@ -59,6 +61,7 @@
 - **05/10/2025:** Sesión fotográfica realizada - Pago de $2,000 anticipo
 - **07/10/2025:** Envío de selector de fotos y solicitud de información para invitación web
 - **11/10/2025:** Entrega de invitación web con ajustes (cambio de número telefónico)
+- **14/11/2025:** Pago del saldo final de $3,300 vía transferencia (José Alejandro Elías) - **Liquidado completamente**
 
 ---
 
@@ -71,3 +74,4 @@
 ---
 
 **Documento generado:** 13 de noviembre de 2025
+**Última actualización:** 14 de noviembre de 2025
