@@ -2,6 +2,27 @@
 // GLOBAL VARIABLES
 // ========================================
 const photos = [
+    // Fotos de la sesión (57)
+    'images/foto7_0001.jpg', 'images/foto7_0002.jpg', 'images/foto7_0003.jpg',
+    'images/foto7_0004.jpg', 'images/foto7_0005.jpg', 'images/foto7_0006.jpg',
+    'images/foto7_0007.jpg', 'images/foto7_0008.jpg', 'images/foto7_0009.jpg',
+    'images/foto7_0010.jpg', 'images/foto7_0011.jpg', 'images/foto7_0012.jpg',
+    'images/foto7_0013.jpg', 'images/foto7_0014.jpg', 'images/foto7_0015.jpg',
+    'images/foto7_0016.jpg', 'images/foto7_0017.jpg', 'images/foto7_0018.jpg',
+    'images/foto7_0019.jpg', 'images/foto7_0020.jpg', 'images/foto7_0021.jpg',
+    'images/foto7_0022.jpg', 'images/foto7_0023.jpg', 'images/foto7_0024.jpg',
+    'images/foto7_0025.jpg', 'images/foto7_0026.jpg', 'images/foto7_0027.jpg',
+    'images/foto7_0028.jpg', 'images/foto7_0029.jpg', 'images/foto7_0030.jpg',
+    'images/foto7_0031.jpg', 'images/foto7_0032.jpg', 'images/foto7_0033.jpg',
+    'images/foto7_0034.jpg', 'images/foto7_0035.jpg', 'images/foto7_0036.jpg',
+    'images/foto7_0037.jpg', 'images/foto7_0038.jpg', 'images/foto7_0039.jpg',
+    'images/foto7_0040.jpg', 'images/foto7_0041.jpg', 'images/foto7_0042.jpg',
+    'images/foto7_0043.jpg', 'images/foto7_0044.jpg', 'images/foto7_0045.jpg',
+    'images/foto7_0046.jpg', 'images/foto7_0047.jpg', 'images/foto7_0048.jpg',
+    'images/foto7_0049.jpg', 'images/foto7_0050.jpg', 'images/foto7_0051.jpg',
+    'images/foto7_0052.jpg', 'images/foto7_0053.jpg', 'images/foto7_0054.jpg',
+    'images/foto7_0055.jpg', 'images/foto7_0056.jpg', 'images/foto7_0057.jpg',
+    // Fotos del evento (197)
     'images/evento/DSC_3612.webp', 'images/evento/DSC_3616.webp', 'images/evento/DSC_3617.webp',
     'images/evento/DSC_3619.webp', 'images/evento/DSC_3620.webp', 'images/evento/DSC_3621.webp',
     'images/evento/DSC_3623.webp', 'images/evento/DSC_3624.webp', 'images/evento/DSC_3625.webp',
