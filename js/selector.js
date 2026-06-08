@@ -90,6 +90,11 @@ const photos = [
     'images/evento/DSC_4151.webp', 'images/evento/DSC_4155.webp', 'images/evento/DSC_4160.webp',
     'images/evento/DSC_4161.webp', 'images/evento/DSC_4166.webp'
 ];
+// Thumbnail helper: usa thumb/ en grid para ahorrar RAM en moviles
+function getThumbPath(fullPath) {
+    return fullPath.replace('images/', 'images/thumb/');
+}
+
 
 const STORAGE_KEY = 'jadelik_xv_photo_selections';
 let photoSelections = {};
@@ -209,7 +214,7 @@ function renderGallery() {
 
         card.innerHTML = `
             <div class="photo-image-container">
-                <img src="${photo}" alt="Foto ${index + 1}" loading="lazy">
+                <img src="${getThumbPath(photo)}" alt="Foto ${index + 1}" loading="lazy">
             </div>
             <div class="photo-number">Foto ${index + 1}</div>
             ${badgesHTML}
